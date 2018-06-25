@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7976952588,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Login Functionality",
+        "description": "",
+        "id": "sign-in-and-contact-us;successful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 1174379880,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8431287480,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I go to link \"http://10.1.17.4:64382\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://10.1.17.4:64382",
+                  "offset": 8
+                }
+              ],
+              "location": "KeywordDrivenFramework.i_go_to_link(String)"
+            },
+            "keyword": "When "
+             },
+          {
+            "result": {
+              "duration": 4722840462,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Input Username as \"ktht060618@gmail.com\" and Password as \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ktht060618@gmail.com",
+                  "offset": 27
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "KeywordDrivenFramework.input_username_and_password(String,String)"
+            },
+            "keyword": "Then"
+          }
+        ]
+      }
+      
+      ]
+	}
+]
