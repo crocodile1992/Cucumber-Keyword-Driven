@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 7976952588,
+              "duration": 4920240024,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 2,
-        "name": "Login Functionality",
+        "line": 3,
+        "name": "Create Declaration High Values",
         "description": "",
-        "id": "sign-in-and-contact-us;successful-login",
+        "id": "create-declaration-high-values;create-declaration-high-values",
         "after": [
           {
             "result": {
-              "duration": 1174379880,
+              "duration": 1109232354,
               "status": "passed"
             },
             "match": {
@@ -34,11 +34,11 @@
         "steps": [
           {
             "result": {
-              "duration": 8431287480,
+              "duration": 2668051354,
               "status": "passed"
             },
-            "line": 3,
-            "name": "I go to link \"http://10.1.17.4:64382\"",
+            "line": 4,
+            "name": "I open \"http://10.1.17.4:64382\" website",
             "match": {
               "arguments": [
                 {
@@ -46,17 +46,17 @@
                   "offset": 8
                 }
               ],
-              "location": "KeywordDrivenFramework.i_go_to_link(String)"
+              "location": "CreateDeclarationsLowValue.i_open_website(String)"
             },
-            "keyword": "When "
-             },
+            "keyword": "Given "
+          },
           {
             "result": {
-              "duration": 4722840462,
+              "duration": 254445189,
               "status": "passed"
             },
-            "line": 4,
-            "name": "Input Username as \"ktht060618@gmail.com\" and Password as \"123456\"",
+            "line": 5,
+            "name": "I login using credentials \"ktht060618@gmail.com\" and \"123456\"",
             "match": {
               "arguments": [
                 {
@@ -65,16 +65,203 @@
                 },
                 {
                   "val": "123456",
-                  "offset": 45
+                  "offset": 54
                 }
               ],
-              "location": "KeywordDrivenFramework.input_username_and_password(String,String)"
+              "location": "CreateDeclarationsLowValue.i_login_using_credentials_and(String,String)"
             },
-            "keyword": "Then"
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10071229536,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Closed Notify popup",
+            "match": {
+              "location": "CreateDeclarationsLowValue.close_notify_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 627839497,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Goto create declaration high value menu",
+            "match": {
+              "location": "CreateDeclarationsHighValue.goto_create_declaration_lowvalu_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3424340833,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter mandatory data for General Information",
+            "match": {
+              "location": "CreateDeclarationsHighValue.enter_mandatory_data_for_general_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field1",
+                  "Value1"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Group type",
+                  "Sản xuất, xuất khẩu"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Method Code",
+                  "Nhập kinh doanh sản xuất hàng hóa làm thủ tục"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Custom",
+                  "\"01B1\",\"Chi cục HQ CK Sân bay quốc tế Nội Bài\""
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Transport MethodCode",
+                  "Đường bộ (Xe tải)"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Organization Type",
+                  "Cá nhân gửi tổ chức"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3524596832,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter mandatory data for Import and Export Information",
+            "match": {
+              "location": "CreateDeclarationsHighValue.enter_mandatory_data_for_import_and_export_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field2",
+                  "Value2"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Exporter Name",
+                  "Đỗ Thị Quang"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "Country Code",
+                  "\"AD\",\"Andorra\""
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 729032237,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Enter mandatory data for Bill Lading Information",
+            "match": {
+              "location": "CreateDeclarationsHighValue.enter_mandatory_data_for_bill_lading_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field3",
+                  "Value 3",
+                  "Value 4"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "BillLading Data",
+                  "EN057732555VN",
+                  "EN057732556VN"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "Number Seal",
+                  "8",
+                  ""
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Total Weight",
+                  "10",
+                  ""
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "Date Entry",
+                  "07/02/2018",
+                  ""
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "Place Loading",
+                  "RAS TANURA",
+                  ""
+                ],
+                "line": 29
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@SmokeTest"
           }
         ]
       }
-      
-      ]
-	}
+    ],
+    "name": "Create Declaration High Values",
+    "description": "",
+    "id": "create-declaration-high-values",
+    "keyword": "Feature",
+    "uri": "features/CreateDeclarationsHighValue.feature"
+  }
 ]

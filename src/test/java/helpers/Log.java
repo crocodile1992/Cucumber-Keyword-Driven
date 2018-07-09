@@ -1,9 +1,9 @@
 package helpers;
-
 import org.apache.log4j.Logger;
 
 public class Log {
-private static Logger Log = Logger.getLogger(Log.class.getName()); 
+
+	private static Logger Log = Logger.getLogger(Log.class.getName()); 
 	
 	public static void startTestCase(String sTestCaseName){
 		Log.info("Started Test case");
